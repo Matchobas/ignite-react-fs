@@ -1,5 +1,13 @@
-export function Post() {
+interface PostProps {
+  author: string;
+  content: string;
+}
+
+export function Post({ author, content }: PostProps) {
   return (
-    <h1>Repeat</h1>
+    <>
+      <h1>{author}</h1>
+      <p>{content}</p>
+    </>
   )
 }
