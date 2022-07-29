@@ -1,16 +1,19 @@
 import { Header } from './components/Header';
 import { Post } from './Post';
 
+import styles from './App.module.css';
+
 import './global.css';
 
 function App() {
   return (
     <>
       <Header />
-      <Post 
-        author="Matheus Alexandria" 
-        content="Lorem ipsum dolor sit, amet conset."
-      />
+      
+      <div className={styles.wrapper}>
+        <aside>Profile</aside>
+        <div>Posts</div>
+      </div>
     </>
   )
 }
