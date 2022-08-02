@@ -17,6 +17,7 @@ export function Post() {
 
       <div className={styles.content}>
         <p>Meu povo conteúdo novo inédito no feed chegando nessa merda simbora</p>
+        <a href="#">Go to my page</a>
       </div>
     </article>
   )
