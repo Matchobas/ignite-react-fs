@@ -19,6 +19,15 @@ export function Post() {
         <p>Meu povo conteúdo novo inédito no feed chegando nessa merda simbora</p>
         <a href="#">Go to my page</a>
       </div>
+
+
+      <form className={styles.commentForm}>
+        <strong>Deixe seu feedback</strong>
+
+        <textarea placeholder="Deixe seu comentário"/>
+
+        <button type="submit">Comentar</button>
+      </form>
     </article>
   )
 }
