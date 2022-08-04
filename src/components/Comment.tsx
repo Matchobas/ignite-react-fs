@@ -13,11 +13,11 @@ export function Comment() {
               <strong>Matheus Alexandria</strong>
 
               <time title="1 de Agosto às 23:00" dateTime="2022-08-01 23:00:00">Cerca de 2 horas atŕas</time>
-
-              <button title="Deletar comentário">
-                <Trash size={20} />
-              </button>
             </div>
+
+            <button title="Deletar comentário">
+              <Trash size={20} />
+            </button>
           </header>
 
           <p>Muito bom caralho!</p>
