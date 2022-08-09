@@ -24,7 +24,7 @@ const posts = [
     id: 2,
     author: {
       avatarUrl: 'https://github.com/jeftemartins.png',
-      name: 'Jefte Martings',
+      name: 'Jefte Martins',
       role: '.NET Developer at Atlantico',
     },
     content: [

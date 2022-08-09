@@ -17,22 +17,34 @@ export function Post({
   publishedDate,
   content
 }: PostProps) {
+  const publishedDateFormatted = new Intl.DateTimeFormat('pt-BR', {
+    day: '2-digit',
+    month: 'long',
+    hour: '2-digit',
+    minute: '2-digit'
+  }).format(publishedDate);
+
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar source="https://github.com/matchobas.png" />
+          <Avatar source={avatar_url} />
           <div className={styles.authorInfo}>
-            <strong>Matheus Alexandria</strong>
-            <span>Fullstack Developer</span>
+            <strong>{name}</strong>
+            <span>{role}</span>
           </div>
         </div>
 
-        <time title="1 de Agosto às 23:00" dateTime="2022-08-01 23:00:00">Publicado há 1h</time>
+        <time 
+          title="1 de Agosto às 23:00" 
+          dateTime="2022-08-01 23:00:00"
+        >
+          {publishedDateFormatted}
+        </time>
       </header>
 
       <div className={styles.content}>
-        <p>Meu povo conteúdo novo inédito no feed chegando nessa merda simbora</p>
+        <p>{content}</p>
         <a href="#">Go to my page</a>
       </div>
 
